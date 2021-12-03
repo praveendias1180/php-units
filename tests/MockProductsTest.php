@@ -5,6 +5,8 @@ use PHPUnit\Framework\TestCase;
 class MockProductsTest extends TestCase{
     /**
      * Let's write a test using AAA method.
+     * 
+     * (Or Given, When, Then method.)
      */
     public function testMockProductsAreReturned(){
         /**
