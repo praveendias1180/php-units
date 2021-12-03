@@ -11,6 +11,14 @@ class CartTest extends TestCase{
         $this->cart = new Cart();
     }
 
+    protected function tearDown(): void
+    {
+        /**
+         * If the property has modified during a test.
+         */
+        Cart::$tax = 1.2;
+    }
+
     function testCalculateFinal(){
         $cart = new Cart();
         $final = $cart->calculateFinal(10);
